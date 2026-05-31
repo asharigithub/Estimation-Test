@@ -1,0 +1,18 @@
+[
+ {
+  "default_value": null,
+  "doc_type": "Lead",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocType",
+  "field_name": null,
+  "is_system_generated": 0,
+  "modified": "2026-05-31 17:22:46.434266",
+  "module": "Estimation",
+  "name": "Lead-main-field_order",
+  "property": "field_order",
+  "property_type": "Data",
+  "row_name": null,
+  "value": "[\"naming_series\", \"salutation\", \"first_name\", \"middle_name\", \"last_name\", \"column_break_1\", \"lead_name\", \"job_title\", \"gender\", \"col_break123\", \"lead_owner\", \"status\", \"customer\", \"type\", \"request_type\", \"custom_section_break_dtdwy\", \"custom_project_name\", \"custom_project_type\", \"custom_column_break_tbip8\", \"custom_project_location\", \"custom_builtup_area_sq_ft\", \"custom_section_break_hhnhm\", \"custom_scope_of_consultancy\", \"custom_section_break_dmzqq\", \"custom_expected_project_duration\", \"custom_column_break_mszce\", \"custom_project_status\", \"custom_column_break_emqmd\", \"custom_site_visit_required\", \"custom_client_brief__requirements\", \"custom_budget_expectation_\", \"custom_column_break_exokk\", \"custom_design_style_preference\", \"custom_column_break_uszrv\", \"custom_no_of_bedrooms\", \"custom_section_break_bwvfk\", \"custom_special_spaces_needed\", \"custom_section_break_dj2hm\", \"custom_family_size__lifestyle_notes\", \"custom_special__unique_requirements\", \"custom_initial_requirement_notes\", \"contact_info_tab\", \"email_id\", \"website\", \"column_break_20\", \"mobile_no\", \"whatsapp_no\", \"column_break_16\", \"phone\", \"phone_ext\", \"organization_section\", \"company_name\", \"no_of_employees\", \"column_break_28\", \"annual_revenue\", \"industry\", \"market_segment\", \"column_break_31\", \"territory\", \"fax\", \"address_section\", \"address_html\", \"column_break_38\", \"city\", \"state\", \"country\", \"column_break2\", \"contact_html\", \"section_break_analytics\", \"utm_source\", \"utm_content\", \"column_break_gkxo\", \"utm_campaign\", \"column_break_gqka\", \"utm_medium\", \"qualification_tab\", \"qualification_status\", \"column_break_64\", \"qualified_by\", \"qualified_on\", \"other_info_tab\", \"company\", \"column_break_22\", \"language\", \"image\", \"title\", \"column_break_50\", \"disabled\", \"unsubscribed\", \"blog_subscriber\", \"activities_tab\", \"open_activities_html\", \"all_activities_section\", \"all_activities_html\", \"notes_tab\", \"notes_html\", \"notes\", \"dashboard_tab\"]"
+ }
+]

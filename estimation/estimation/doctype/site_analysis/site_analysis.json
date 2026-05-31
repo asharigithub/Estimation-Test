@@ -1,0 +1,473 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-05-31 16:24:55.849113",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "link_and__reference_section",
+  "lead",
+  "site_visit_date",
+  "naming_series",
+  "column_break_ilwe",
+  "lead_name",
+  "visited_by",
+  "status_section",
+  "analysis_status",
+  "column_break_fqih",
+  "approved_by",
+  "column_break_ydvi",
+  "approval_date",
+  "site_dimensions_section",
+  "lengthft",
+  "plot_shape",
+  "column_break_vcyu",
+  "widthft",
+  "dimension_sketch",
+  "column_break_gwac",
+  "total_area",
+  "column_break_tvln",
+  "area_unit",
+  "section_break_urjk",
+  "road_width_ft",
+  "vehicle_access",
+  "column_break_kobj",
+  "road_type",
+  "parking_space_available",
+  "column_break_bzlf",
+  "entry_direction",
+  "section_break_eees",
+  "access_notes",
+  "surroundings_section",
+  "north_boundary",
+  "east_boundary",
+  "nearby_facilities",
+  "column_break_qxxo",
+  "south_boundary",
+  "west_boundary",
+  "surroundings_notes",
+  "more_info_tab",
+  "soil_condition_section",
+  "soil_type",
+  "soil_bearing_capacity",
+  "soil_notes",
+  "column_break_gfkm",
+  "soil_test_done",
+  "soil_test_report",
+  "section_break_uqua",
+  "local_body_type",
+  "far__fsi_allowed",
+  "front_setback_ft",
+  "regulation_notes",
+  "column_break_iwbs",
+  "building_permit_required",
+  "crz_applicable",
+  "rear_setback_ft",
+  "side_setback_left_ft",
+  "side_setback_right_ft",
+  "section_break_jfsf",
+  "maximum_buildable_area_sq_ft",
+  "constraints_identified",
+  "overall_remarks",
+  "column_break_szcy",
+  "feasibility_status",
+  "recommendations",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "link_and__reference_section",
+   "fieldtype": "Section Break",
+   "label": "Link  & Reference"
+  },
+  {
+   "fieldname": "lead",
+   "fieldtype": "Link",
+   "label": "Lead",
+   "options": "Lead"
+  },
+  {
+   "fieldname": "site_visit_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Site Visit Date"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "SA.-"
+  },
+  {
+   "fieldname": "column_break_ilwe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "lead.lead_name",
+   "fieldname": "lead_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Lead Name"
+  },
+  {
+   "fieldname": "visited_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Visited By",
+   "options": "User"
+  },
+  {
+   "fieldname": "status_section",
+   "fieldtype": "Section Break",
+   "label": "Status"
+  },
+  {
+   "fieldname": "analysis_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Analysis status",
+   "options": "Draft\nReviewed\nApproved by client"
+  },
+  {
+   "fieldname": "column_break_fqih",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Approved By",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_ydvi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approval_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Approval Date"
+  },
+  {
+   "fieldname": "site_dimensions_section",
+   "fieldtype": "Section Break",
+   "label": "Site Dimensions"
+  },
+  {
+   "fieldname": "lengthft",
+   "fieldtype": "Float",
+   "label": "Length(ft)"
+  },
+  {
+   "fieldname": "plot_shape",
+   "fieldtype": "Select",
+   "label": "Plot Shape",
+   "options": "Rectangular\nIrregular\nCorner plot\nL-shaped"
+  },
+  {
+   "fieldname": "column_break_vcyu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "widthft",
+   "fieldtype": "Float",
+   "label": "Width(ft)"
+  },
+  {
+   "fieldname": "dimension_sketch",
+   "fieldtype": "Attach",
+   "label": "Dimension Sketch"
+  },
+  {
+   "fieldname": "column_break_gwac",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_area",
+   "fieldtype": "Data",
+   "label": "Total Area"
+  },
+  {
+   "fieldname": "column_break_tvln",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "area_unit",
+   "fieldtype": "Select",
+   "label": "Area Unit",
+   "options": "sq ft\nsq m\ncents\ncents (Kerala unit)"
+  },
+  {
+   "fieldname": "section_break_urjk",
+   "fieldtype": "Section Break",
+   "label": "Access"
+  },
+  {
+   "fieldname": "road_width_ft",
+   "fieldtype": "Float",
+   "label": "Road width (ft)"
+  },
+  {
+   "default": "0",
+   "description": "Can heavy vehicles reach the plot?",
+   "fieldname": "vehicle_access",
+   "fieldtype": "Check",
+   "label": "Vehicle Access"
+  },
+  {
+   "fieldname": "column_break_kobj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "road_type",
+   "fieldtype": "Select",
+   "label": "Road type",
+   "options": "Panchayat Road\nMunicipal Road\nPrivate Road\nHighway"
+  },
+  {
+   "default": "0",
+   "fieldname": "parking_space_available",
+   "fieldtype": "Check",
+   "label": "Parking space available"
+  },
+  {
+   "fieldname": "column_break_bzlf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "entry_direction",
+   "fieldtype": "Select",
+   "label": "Entry direction",
+   "options": "North\nSouth\nEast\nWest\nNorth-East"
+  },
+  {
+   "fieldname": "section_break_eees",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "access_notes",
+   "fieldtype": "Small Text",
+   "label": "Access notes"
+  },
+  {
+   "fieldname": "surroundings_section",
+   "fieldtype": "Section Break",
+   "label": "Surroundings"
+  },
+  {
+   "fieldname": "north_boundary",
+   "fieldtype": "Data",
+   "label": "North boundary"
+  },
+  {
+   "fieldname": "east_boundary",
+   "fieldtype": "Data",
+   "label": "East boundary"
+  },
+  {
+   "fieldname": "nearby_facilities",
+   "fieldtype": "Table MultiSelect",
+   "label": "Nearby Facilities ",
+   "options": "Near By Facilities"
+  },
+  {
+   "fieldname": "column_break_qxxo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "south_boundary",
+   "fieldtype": "Data",
+   "label": "South boundary"
+  },
+  {
+   "fieldname": "west_boundary",
+   "fieldtype": "Data",
+   "label": "West boundary"
+  },
+  {
+   "fieldname": "surroundings_notes",
+   "fieldtype": "Small Text",
+   "label": "Surroundings notes"
+  },
+  {
+   "fieldname": "more_info_tab",
+   "fieldtype": "Tab Break",
+   "label": "More Info"
+  },
+  {
+   "fieldname": "soil_condition_section",
+   "fieldtype": "Section Break",
+   "label": "Soil Condition"
+  },
+  {
+   "fieldname": "soil_type",
+   "fieldtype": "Select",
+   "label": "Soil Type",
+   "options": "Clay\nSandy\nLaterite\nBlack cotton\nRocky\nMixed"
+  },
+  {
+   "fieldname": "soil_bearing_capacity",
+   "fieldtype": "Data",
+   "label": "Soil Bearing Capacity"
+  },
+  {
+   "fieldname": "soil_notes",
+   "fieldtype": "Small Text",
+   "label": "Soil Notes"
+  },
+  {
+   "fieldname": "column_break_gfkm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "soil_test_done",
+   "fieldtype": "Check",
+   "label": "Soil Test Done"
+  },
+  {
+   "fieldname": "soil_test_report",
+   "fieldtype": "Attach",
+   "label": "Soil Test Report"
+  },
+  {
+   "fieldname": "section_break_uqua",
+   "fieldtype": "Section Break",
+   "label": "Regulations & setbacks"
+  },
+  {
+   "fieldname": "local_body_type",
+   "fieldtype": "Select",
+   "label": "Local Body Type",
+   "options": "Panchayat\nMunicipality\n, Corporation, CMDA, etc"
+  },
+  {
+   "fieldname": "far__fsi_allowed",
+   "fieldtype": "Float",
+   "label": "FAR / FSI allowed"
+  },
+  {
+   "fieldname": "front_setback_ft",
+   "fieldtype": "Float",
+   "label": "Front setback (ft)"
+  },
+  {
+   "fieldname": "regulation_notes",
+   "fieldtype": "Small Text",
+   "label": "Regulation notes"
+  },
+  {
+   "fieldname": "column_break_iwbs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "building_permit_required",
+   "fieldtype": "Check",
+   "label": "Building permit required"
+  },
+  {
+   "default": "0",
+   "fieldname": "crz_applicable",
+   "fieldtype": "Check",
+   "label": "CRZ applicable"
+  },
+  {
+   "fieldname": "rear_setback_ft",
+   "fieldtype": "Float",
+   "label": "Rear setback (ft)"
+  },
+  {
+   "fieldname": "side_setback_left_ft",
+   "fieldtype": "Float",
+   "label": "Side setback left (ft)"
+  },
+  {
+   "fieldname": "side_setback_right_ft",
+   "fieldtype": "Float",
+   "label": "Side setback right (ft)"
+  },
+  {
+   "fieldname": "section_break_jfsf",
+   "fieldtype": "Section Break",
+   "label": "Feasibility planning"
+  },
+  {
+   "fieldname": "maximum_buildable_area_sq_ft",
+   "fieldtype": "Float",
+   "label": "Maximum buildable area (sq ft)"
+  },
+  {
+   "fieldname": "constraints_identified",
+   "fieldtype": "Small Text",
+   "label": "Constraints identified"
+  },
+  {
+   "fieldname": "overall_remarks",
+   "fieldtype": "Small Text",
+   "label": "Overall remarks"
+  },
+  {
+   "fieldname": "column_break_szcy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "feasibility_status",
+   "fieldtype": "Select",
+   "label": "Feasibility status",
+   "options": "Feasible\nFeasible with modifications\nNot feasible"
+  },
+  {
+   "fieldname": "recommendations",
+   "fieldtype": "Small Text",
+   "label": "Recommendations"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Site Analysis",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-05-31 16:54:55.933667",
+ "modified_by": "cosarc@gmail.com",
+ "module": "Estimation",
+ "name": "Site Analysis",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "cosarc@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

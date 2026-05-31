@@ -23,7 +23,24 @@ app_license = "mit"
 
 # Includes in <head>
 # ------------------
+fixtures = [
+    {"dt":"Custom Field",
+        "filters":[
+        ["module","in",(
+            "Estimation"
 
+        )]
+    ]
+    },
+    {"dt":"Property Setter",
+        "filters":[
+        ["module","in",(
+            "Estimation"
+
+        )]
+    ]
+    },
+]
 # include js, css files in header of desk.html
 # app_include_css = "/assets/estimation/css/estimation.css"
 # app_include_js = "/assets/estimation/js/estimation.js"
@@ -133,7 +150,10 @@ app_license = "mit"
 # has_permission = {
 # 	"Event": "frappe.desk.doctype.event.event.has_permission",
 # }
-
+# include js in doctype views
+doctype_js = {
+    "Lead":"public/js/lead.js",
+}
 # Document Events
 # ---------------
 # Hook on document methods and events
