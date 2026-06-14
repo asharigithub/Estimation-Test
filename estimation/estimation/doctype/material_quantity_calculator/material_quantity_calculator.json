@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-14 13:00:35.521916",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "structure_calculation",
+  "finishing_calculation",
+  "waterproofing_calculation"
+ ],
+ "fields": [
+  {
+   "fieldname": "structure_calculation",
+   "fieldtype": "Table",
+   "label": "Structure Calculation",
+   "options": "Structure Calculation"
+  },
+  {
+   "fieldname": "finishing_calculation",
+   "fieldtype": "Table",
+   "label": "Finishing Calculation",
+   "options": "Finishing Calculation"
+  },
+  {
+   "fieldname": "waterproofing_calculation",
+   "fieldtype": "Table",
+   "label": "Waterproofing Calculation",
+   "options": "Waterproofing Calculation"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-06-14 13:12:06.192098",
+ "modified_by": "Administrator",
+ "module": "Estimation",
+ "name": "Material Quantity Calculator",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

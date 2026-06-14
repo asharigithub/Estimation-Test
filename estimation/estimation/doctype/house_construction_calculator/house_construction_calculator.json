@@ -1,0 +1,189 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-06-14 12:01:29.522826",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "project_information_section",
+  "owner_name",
+  "naming_series",
+  "column_break_qypb",
+  "site_location",
+  "column_break_vlrn",
+  "project_start",
+  "column_break_riep",
+  "architectengineer",
+  "architectengineer_name",
+  "section_break_luxc",
+  "plot_lengthft",
+  "builtup_area_per_floor_of_plot",
+  "column_break_lzuq",
+  "plot_widthft",
+  "wastage_factor_",
+  "column_break_vkmu",
+  "no_of_floors",
+  "total_builtup_area",
+  "column_break_lhcw",
+  "floor_height",
+  "section_break_nhxr",
+  "cost_calculation_structural_materials",
+  "total_cost"
+ ],
+ "fields": [
+  {
+   "fieldname": "owner_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Owner Name"
+  },
+  {
+   "fieldname": "column_break_qypb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "site_location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Site Location"
+  },
+  {
+   "fieldname": "column_break_vlrn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "project_start",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Project Start"
+  },
+  {
+   "fieldname": "column_break_riep",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "architectengineer",
+   "fieldtype": "Link",
+   "label": "Architect/Engineer",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "architectengineer.employee_name",
+   "fieldname": "architectengineer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Architect/Engineer Name"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "HCA-"
+  },
+  {
+   "fieldname": "project_information_section",
+   "fieldtype": "Section Break",
+   "label": "Project Information"
+  },
+  {
+   "fieldname": "section_break_luxc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "plot_lengthft",
+   "fieldtype": "Float",
+   "label": "Plot Length(ft)"
+  },
+  {
+   "fieldname": "column_break_lzuq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plot_widthft",
+   "fieldtype": "Float",
+   "label": "Plot Width(ft)"
+  },
+  {
+   "fieldname": "column_break_vkmu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "no_of_floors",
+   "fieldtype": "Int",
+   "label": "No of Floors"
+  },
+  {
+   "fieldname": "column_break_lhcw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "floor_height",
+   "fieldtype": "Float",
+   "label": "Floor Height(ft)"
+  },
+  {
+   "fieldname": "builtup_area_per_floor_of_plot",
+   "fieldtype": "Percent",
+   "label": "Built-Up Area per Floor (%of plot)"
+  },
+  {
+   "fieldname": "wastage_factor_",
+   "fieldtype": "Percent",
+   "label": "Wastage Factor (%)"
+  },
+  {
+   "fieldname": "total_builtup_area",
+   "fieldtype": "Float",
+   "label": "Total Built-Up Area"
+  },
+  {
+   "fieldname": "section_break_nhxr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cost_calculation_structural_materials",
+   "fieldtype": "Table",
+   "label": "Cost Calculation Structural Materials",
+   "options": "Cost Calculation Structural Materials",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_cost",
+   "fieldtype": "Currency",
+   "label": "Total Cost"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-06-14 13:40:26.314576",
+ "modified_by": "Administrator",
+ "module": "Estimation",
+ "name": "House Construction Calculator",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
