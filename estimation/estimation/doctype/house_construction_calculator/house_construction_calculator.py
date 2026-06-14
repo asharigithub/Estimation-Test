@@ -4,11 +4,27 @@
 import frappe
 from frappe.model.document import Document
 
-
 class HouseConstructionCalculator(Document):
     def validate(self):
+        bua = (self.plot_lengthft) * (self.plot_widthft) * (self.builtup_area_per_floor_of_plot / 100) * (self.no_of_floors)
+        self.total_builtup_area = bua
+
         material_cost_calculator = frappe.get_single("Material Quantity Calculator")
+
         if material_cost_calculator.structure_calculation:
+
+            # Get existing rows as a dict {structural_materials: row}
+            existing_rows = {i.structural_materials: i for i in self.cost_calculation_structural_materials}
+
+            # Sync rows from Material Quantity Calculator
+            for j in material_cost_calculator.structure_calculation:
+                if j.structure not in existing_rows:
+                    # Add missing rows automatically
+                    self.append("cost_calculation_structural_materials", {
+                        "structural_materials": j.structure,
+                    })
+
+            # Recalculate after sync
             for i in self.cost_calculation_structural_materials:
                 for j in material_cost_calculator.structure_calculation:
                     if j.structure == i.structural_materials:
@@ -28,7 +44,7 @@ class HouseConstructionCalculator(Document):
                                 )
 
             # Sum up all row costs after the loop
-            self.total_cost = sum(i.total_cost or 0 for i in self.cost_calculation_structural_materials)
+            self.total_cost = sum(i.total_cost or 0 for i in self.cost_calculation_structural_materials)    
 				
 
 

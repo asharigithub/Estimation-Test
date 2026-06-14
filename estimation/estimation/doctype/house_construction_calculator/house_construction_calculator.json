@@ -139,7 +139,8 @@
   {
    "fieldname": "total_builtup_area",
    "fieldtype": "Float",
-   "label": "Total Built-Up Area"
+   "label": "Total Built-Up Area",
+   "read_only": 1
   },
   {
    "fieldname": "section_break_nhxr",
@@ -161,7 +162,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-14 13:40:26.314576",
+ "modified": "2026-06-14 16:00:02.740956",
  "modified_by": "Administrator",
  "module": "Estimation",
  "name": "House Construction Calculator",
