@@ -29,7 +29,17 @@
   "floor_height",
   "section_break_nhxr",
   "cost_calculation_structural_materials",
-  "total_cost"
+  "section_break_czcm",
+  "cost_calculation_finishing_materials",
+  "section_break_ykdl",
+  "cost_calculation_waterproofing_materials",
+  "section_break_ktes",
+  "total_cost_structural_materials",
+  "total_cost",
+  "column_break_zqnj",
+  "total_cost_finishing_materials",
+  "column_break_hpen",
+  "total_cost_waterproofing_materials"
  ],
  "fields": [
   {
@@ -157,12 +167,59 @@
    "fieldname": "total_cost",
    "fieldtype": "Currency",
    "label": "Total Cost"
+  },
+  {
+   "fieldname": "section_break_czcm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cost_calculation_finishing_materials",
+   "fieldtype": "Table",
+   "label": "Cost Calculation Finishing Materials",
+   "options": "Cost Calculation Finishing Materials"
+  },
+  {
+   "fieldname": "total_cost_finishing_materials",
+   "fieldtype": "Currency",
+   "label": "Total Cost Finishing Materials"
+  },
+  {
+   "fieldname": "section_break_ykdl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cost_calculation_waterproofing_materials",
+   "fieldtype": "Table",
+   "label": "Cost Calculation Waterproofing Materials",
+   "options": "Cost Calculation Waterproofing Materials"
+  },
+  {
+   "fieldname": "total_cost_waterproofing_materials",
+   "fieldtype": "Currency",
+   "label": "Total Cost Waterproofing Materials"
+  },
+  {
+   "fieldname": "total_cost_structural_materials",
+   "fieldtype": "Currency",
+   "label": "Total Cost Structural Materials"
+  },
+  {
+   "fieldname": "section_break_ktes",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_zqnj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_hpen",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-14 16:00:02.740956",
+ "modified": "2026-06-15 23:12:02.875475",
  "modified_by": "Administrator",
  "module": "Estimation",
  "name": "House Construction Calculator",
