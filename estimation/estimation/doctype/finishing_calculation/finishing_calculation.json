@@ -17,7 +17,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Structure",
-   "options": "Structure"
+   "options": "Finishing"
   },
   {
    "fieldname": "formula_basis",
@@ -32,7 +32,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-06-14 13:06:51.872876",
+ "modified": "2026-06-15 11:19:22.552390",
  "modified_by": "Administrator",
  "module": "Estimation",
  "name": "Finishing Calculation",
