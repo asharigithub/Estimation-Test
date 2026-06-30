@@ -1,0 +1,433 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-06-30 13:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "project_info_section",
+  "project_title",
+  "naming_series",
+  "column_break_boq_p1",
+  "site_analysis",
+  "customer",
+  "lead",
+  "lead_name",
+  "column_break_boq_p2",
+  "location",
+  "date",
+  "column_break_boq_p3",
+  "prepared_by",
+  "status",
+  "linked_quotation",
+  "building_details_section",
+  "plot_area_sqft",
+  "no_of_floors",
+  "structure_type",
+  "column_break_boq_b1",
+  "ground_floor_bua_sqft",
+  "first_floor_bua_sqft",
+  "column_break_boq_b2",
+  "total_bua_sqft",
+  "total_bua_sqm",
+  "column_break_boq_b3",
+  "floor_height_mm",
+  "assumptions_section",
+  "rcc_grade",
+  "external_wall_mm",
+  "concrete_cover_mm",
+  "column_break_boq_a1",
+  "steel_grade",
+  "internal_wall_mm",
+  "wastage_percent",
+  "boq_items_section",
+  "boq_items",
+  "cost_summary_section",
+  "section_civil_total",
+  "section_flooring_total",
+  "section_bathroom_total",
+  "section_doors_total",
+  "column_break_boq_s1",
+  "section_painting_total",
+  "section_electrical_total",
+  "section_plumbing_total",
+  "grand_totals_section",
+  "total_material_cost",
+  "total_labour_cost",
+  "column_break_boq_g1",
+  "subtotal_a",
+  "contingency_percent",
+  "contingency_amount",
+  "column_break_boq_g2",
+  "subtotal_b",
+  "overhead_percent",
+  "overhead_amount",
+  "grand_total"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_info_section",
+   "fieldtype": "Section Break",
+   "label": "Project Information"
+  },
+  {
+   "fieldname": "project_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Project / House Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "BOQ-"
+  },
+  {
+   "fieldname": "column_break_boq_p1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "site_analysis",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Site Analysis",
+   "options": "Site Analysis"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "lead",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Lead",
+   "options": "Lead"
+  },
+  {
+   "fetch_from": "lead.lead_name",
+   "fieldname": "lead_name",
+   "fieldtype": "Data",
+   "label": "Lead Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_boq_p2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Site Location"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_boq_p3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Link",
+   "label": "Prepared By",
+   "options": "User"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Draft\nSent to Client\nApproved\nRevision Required\nRejected",
+   "default": "Draft"
+  },
+  {
+   "fieldname": "linked_quotation",
+   "fieldtype": "Link",
+   "label": "Linked Quotation",
+   "options": "Quotation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "building_details_section",
+   "fieldtype": "Section Break",
+   "label": "Building Details"
+  },
+  {
+   "fieldname": "plot_area_sqft",
+   "fieldtype": "Float",
+   "label": "Plot Area (Sq.ft)"
+  },
+  {
+   "fieldname": "no_of_floors",
+   "fieldtype": "Int",
+   "label": "No. of Floors",
+   "default": "2"
+  },
+  {
+   "fieldname": "structure_type",
+   "fieldtype": "Select",
+   "label": "Structure Type",
+   "options": "RCC Framed Structure\nLoad Bearing\nSteel Structure",
+   "default": "RCC Framed Structure"
+  },
+  {
+   "fieldname": "column_break_boq_b1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ground_floor_bua_sqft",
+   "fieldtype": "Float",
+   "label": "Ground Floor BUA (Sq.ft)"
+  },
+  {
+   "fieldname": "first_floor_bua_sqft",
+   "fieldtype": "Float",
+   "label": "First Floor BUA (Sq.ft)"
+  },
+  {
+   "fieldname": "column_break_boq_b2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_bua_sqft",
+   "fieldtype": "Float",
+   "label": "Total BUA (Sq.ft)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_bua_sqm",
+   "fieldtype": "Float",
+   "label": "Total BUA (Sq.m)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_boq_b3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "floor_height_mm",
+   "fieldtype": "Int",
+   "label": "Floor Height (mm)",
+   "default": "3000"
+  },
+  {
+   "fieldname": "assumptions_section",
+   "fieldtype": "Section Break",
+   "label": "General Assumptions"
+  },
+  {
+   "fieldname": "rcc_grade",
+   "fieldtype": "Select",
+   "label": "RCC Grade",
+   "options": "M20\nM25\nM30",
+   "default": "M20"
+  },
+  {
+   "fieldname": "external_wall_mm",
+   "fieldtype": "Int",
+   "label": "External Wall (mm)",
+   "default": "250"
+  },
+  {
+   "fieldname": "concrete_cover_mm",
+   "fieldtype": "Int",
+   "label": "Concrete Cover (mm)",
+   "default": "25"
+  },
+  {
+   "fieldname": "column_break_boq_a1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "steel_grade",
+   "fieldtype": "Select",
+   "label": "Steel Grade",
+   "options": "Fe500\nFe415",
+   "default": "Fe500"
+  },
+  {
+   "fieldname": "internal_wall_mm",
+   "fieldtype": "Int",
+   "label": "Internal Wall (mm)",
+   "default": "150"
+  },
+  {
+   "fieldname": "wastage_percent",
+   "fieldtype": "Percent",
+   "label": "Wastage Factor (%)",
+   "default": "5"
+  },
+  {
+   "fieldname": "boq_items_section",
+   "fieldtype": "Section Break",
+   "label": "BOQ Line Items"
+  },
+  {
+   "fieldname": "boq_items",
+   "fieldtype": "Table",
+   "label": "BOQ Items",
+   "options": "BOQ Section Item"
+  },
+  {
+   "fieldname": "cost_summary_section",
+   "fieldtype": "Section Break",
+   "label": "Cost Summary by Section"
+  },
+  {
+   "fieldname": "section_civil_total",
+   "fieldtype": "Currency",
+   "label": "Civil Works",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_flooring_total",
+   "fieldtype": "Currency",
+   "label": "Flooring",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_bathroom_total",
+   "fieldtype": "Currency",
+   "label": "Bathroom Tiles",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_doors_total",
+   "fieldtype": "Currency",
+   "label": "Doors & Windows",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_boq_s1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_painting_total",
+   "fieldtype": "Currency",
+   "label": "Painting",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_electrical_total",
+   "fieldtype": "Currency",
+   "label": "Electrical",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_plumbing_total",
+   "fieldtype": "Currency",
+   "label": "Plumbing & Sanitary",
+   "read_only": 1
+  },
+  {
+   "fieldname": "grand_totals_section",
+   "fieldtype": "Section Break",
+   "label": "Grand Total"
+  },
+  {
+   "fieldname": "total_material_cost",
+   "fieldtype": "Currency",
+   "label": "Total Material Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_labour_cost",
+   "fieldtype": "Currency",
+   "label": "Total Labour Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_boq_g1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "subtotal_a",
+   "fieldtype": "Currency",
+   "label": "Sub Total (A)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "contingency_percent",
+   "fieldtype": "Percent",
+   "label": "Contingencies (%)",
+   "default": "5"
+  },
+  {
+   "fieldname": "contingency_amount",
+   "fieldtype": "Currency",
+   "label": "Contingency Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_boq_g2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "subtotal_b",
+   "fieldtype": "Currency",
+   "label": "Sub Total (B)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "overhead_percent",
+   "fieldtype": "Percent",
+   "label": "Contractor Overhead & Profit (%)",
+   "default": "8"
+  },
+  {
+   "fieldname": "overhead_amount",
+   "fieldtype": "Currency",
+   "label": "Overhead Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total",
+   "read_only": 1,
+   "bold": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-06-30 13:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Estimation",
+ "name": "BOQ",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

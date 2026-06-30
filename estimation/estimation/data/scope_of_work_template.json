@@ -1,0 +1,176 @@
+[
+  {
+    "category": "Site Preparation",
+    "order": 1,
+    "items": [
+      {"name": "Site clearing, vegetation removal and demarcation", "order": 1},
+      {"name": "Topsoil removal and disposal", "order": 2},
+      {"name": "Site grading, levelling and earth filling", "order": 3},
+      {"name": "Temporary site fencing / hoarding", "order": 4},
+      {"name": "Setting out and brickwork marking", "order": 5},
+      {"name": "Dewatering arrangement (if required)", "order": 6}
+    ]
+  },
+  {
+    "category": "Foundation Works",
+    "order": 2,
+    "items": [
+      {"name": "Excavation for footings and trenches", "order": 1},
+      {"name": "Anti-termite treatment to soil", "order": 2},
+      {"name": "Plain Cement Concrete (PCC) bedding", "order": 3},
+      {"name": "Footing reinforcement steel fabrication and placement", "order": 4},
+      {"name": "Foundation RCC concrete (footings and pedestals)", "order": 5},
+      {"name": "Foundation backfilling and compaction", "order": 6}
+    ]
+  },
+  {
+    "category": "Structural Works (RCC)",
+    "order": 3,
+    "items": [
+      {"name": "Column reinforcement steel work", "order": 1},
+      {"name": "Column shuttering and concreting", "order": 2},
+      {"name": "Beam reinforcement steel work", "order": 3},
+      {"name": "Slab reinforcement steel work", "order": 4},
+      {"name": "Beam and slab shuttering and concreting", "order": 5},
+      {"name": "Staircase RCC construction", "order": 6}
+    ]
+  },
+  {
+    "category": "Masonry Works",
+    "order": 4,
+    "items": [
+      {"name": "External brick / block masonry walls", "order": 1},
+      {"name": "Internal partition walls", "order": 2},
+      {"name": "Parapet wall construction", "order": 3},
+      {"name": "Lintel and sunshade (chajja) work", "order": 4},
+      {"name": "Arch and decorative masonry", "order": 5},
+      {"name": "Boundary wall construction", "order": 6}
+    ]
+  },
+  {
+    "category": "Roofing Works",
+    "order": 5,
+    "items": [
+      {"name": "Roof slab shuttering and centering", "order": 1},
+      {"name": "Roof slab reinforcement", "order": 2},
+      {"name": "Roof slab concreting and curing", "order": 3},
+      {"name": "Roof screed / slope finish", "order": 4},
+      {"name": "Overhead water tank construction", "order": 5},
+      {"name": "Parapet coping and finishes", "order": 6}
+    ]
+  },
+  {
+    "category": "Waterproofing",
+    "order": 6,
+    "items": [
+      {"name": "Terrace waterproofing (two-coat system)", "order": 1},
+      {"name": "Bathroom and toilet waterproofing", "order": 2},
+      {"name": "Sunken slab waterproofing", "order": 3},
+      {"name": "External wall waterproofing coating", "order": 4},
+      {"name": "Sump and water tank waterproofing", "order": 5}
+    ]
+  },
+  {
+    "category": "Plastering Works",
+    "order": 7,
+    "items": [
+      {"name": "External wall plastering (12 mm)", "order": 1},
+      {"name": "Internal wall plastering (12 mm)", "order": 2},
+      {"name": "Ceiling plastering", "order": 3},
+      {"name": "Staircase and common area plastering", "order": 4},
+      {"name": "Special texture / rough-cast finish (if any)", "order": 5}
+    ]
+  },
+  {
+    "category": "Flooring Works",
+    "order": 8,
+    "items": [
+      {"name": "Sub-base PCC and bedding mortar for flooring", "order": 1},
+      {"name": "Vitrified tile flooring — living and dining", "order": 2},
+      {"name": "Vitrified tile flooring — bedrooms", "order": 3},
+      {"name": "Natural stone / marble flooring (premium areas)", "order": 4},
+      {"name": "Anti-skid ceramic tile — service areas and utility", "order": 5},
+      {"name": "Staircase flooring and nosing", "order": 6}
+    ]
+  },
+  {
+    "category": "Tiling Works",
+    "order": 9,
+    "items": [
+      {"name": "Bathroom and toilet wall tiling (full height)", "order": 1},
+      {"name": "Kitchen dado tiling (up to 2 ft above counter)", "order": 2},
+      {"name": "Utility / wash area wall tiling", "order": 3},
+      {"name": "Exterior / outdoor tiling (porch, sit-out)", "order": 4},
+      {"name": "Coping and edge tile work", "order": 5},
+      {"name": "Tile grouting and finishing", "order": 6}
+    ]
+  },
+  {
+    "category": "Painting Works",
+    "order": 10,
+    "items": [
+      {"name": "External wall putty and primer coat", "order": 1},
+      {"name": "External weather-shield / texture paint (2 coats)", "order": 2},
+      {"name": "Internal wall putty and primer coat", "order": 3},
+      {"name": "Internal emulsion painting (2 finish coats)", "order": 4},
+      {"name": "Wood primer and enamel / lacquer polish", "order": 5}
+    ]
+  },
+  {
+    "category": "Carpentry and Woodwork",
+    "order": 11,
+    "items": [
+      {"name": "Main entrance door frame and shutter", "order": 1},
+      {"name": "Interior door frames and shutters (all rooms)", "order": 2},
+      {"name": "Window frames and shutters / UPVC windows", "order": 3},
+      {"name": "Kitchen cabinets and granite / stone countertop", "order": 4},
+      {"name": "Wardrobes and bedroom storage units", "order": 5},
+      {"name": "False ceiling and POP / gypsum ceiling works", "order": 6}
+    ]
+  },
+  {
+    "category": "Plumbing Works",
+    "order": 12,
+    "items": [
+      {"name": "Underground drainage pipework and inspection chambers", "order": 1},
+      {"name": "Water supply concealed CPVC / UPVC pipework", "order": 2},
+      {"name": "Sanitary ware fixtures (WC, wash basin, kitchen sink)", "order": 3},
+      {"name": "Bathroom fittings (shower, taps, towel rail)", "order": 4},
+      {"name": "Overhead tank and underground sump connection", "order": 5},
+      {"name": "External drainage, soak pit and septic tank", "order": 6}
+    ]
+  },
+  {
+    "category": "Electrical Works",
+    "order": 13,
+    "items": [
+      {"name": "Conduit laying and electrical wiring (concealed)", "order": 1},
+      {"name": "DB / MCB panel installation and earthing", "order": 2},
+      {"name": "Light fixtures and ceiling fans", "order": 3},
+      {"name": "Power outlets, plug points and switch boards", "order": 4},
+      {"name": "External earthing and lightning protection", "order": 5},
+      {"name": "Solar / generator connection provision", "order": 6}
+    ]
+  },
+  {
+    "category": "External Works",
+    "order": 14,
+    "items": [
+      {"name": "Compound wall and main gate fabrication", "order": 1},
+      {"name": "Driveway and pathway paving", "order": 2},
+      {"name": "Stormwater drain and soakpit", "order": 3},
+      {"name": "Landscaping and lawn / turf", "order": 4},
+      {"name": "External signage and name board", "order": 5}
+    ]
+  },
+  {
+    "category": "Finishing and Handover",
+    "order": 15,
+    "items": [
+      {"name": "Site deep cleaning and waste removal", "order": 1},
+      {"name": "Snag list preparation and defect rectification", "order": 2},
+      {"name": "Testing and commissioning of all systems", "order": 3},
+      {"name": "Client handover and as-built drawings", "order": 4}
+    ]
+  }
+]

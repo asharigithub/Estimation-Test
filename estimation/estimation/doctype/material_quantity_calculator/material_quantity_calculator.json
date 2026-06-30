@@ -7,7 +7,9 @@
  "field_order": [
   "structure_calculation",
   "finishing_calculation",
-  "waterproofing_calculation"
+  "waterproofing_calculation",
+  "boq_formulas_section",
+  "boq_quantity_formulas"
  ],
  "fields": [
   {
@@ -27,6 +29,18 @@
    "fieldtype": "Table",
    "label": "Waterproofing Calculation",
    "options": "Waterproofing Calculation"
+  },
+  {
+   "fieldname": "boq_formulas_section",
+   "fieldtype": "Section Break",
+   "label": "BOQ Quantity Formulas"
+  },
+  {
+   "description": "Define one row per BOQ line item. Formula variables: BUA (total sq.ft), GF_BUA, FF_BUA, BUA_SQM, FLOORS, PLOT_AREA, EXT_WALL, INT_WALL, FLOOR_HEIGHT, wastage_factor_",
+   "fieldname": "boq_quantity_formulas",
+   "fieldtype": "Table",
+   "label": "BOQ Quantity Formulas",
+   "options": "BOQ Quantity Formula"
   }
  ],
  "grid_page_length": 50,

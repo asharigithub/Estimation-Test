@@ -1,0 +1,182 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-06-30 12:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "reference_section",
+  "project",
+  "naming_series",
+  "column_break_svr1",
+  "visit_date",
+  "visit_type",
+  "column_break_svr2",
+  "inspector",
+  "stage_of_work",
+  "status_section",
+  "status",
+  "column_break_svr3",
+  "next_visit_date",
+  "checklist_section",
+  "checklist",
+  "observations_section",
+  "observations",
+  "photos",
+  "column_break_svr4",
+  "defects_found",
+  "corrective_action"
+ ],
+ "fields": [
+  {
+   "fieldname": "reference_section",
+   "fieldtype": "Section Break",
+   "label": "Reference"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "SVR-"
+  },
+  {
+   "fieldname": "column_break_svr1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "visit_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Visit Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "visit_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Visit Type",
+   "options": "\nWeekly QC Visit\nProgress Review\nFinishing Stage Daily Check\nSafety Check\nMaterial Verification"
+  },
+  {
+   "fieldname": "column_break_svr2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "inspector",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Inspector",
+   "options": "User"
+  },
+  {
+   "fieldname": "stage_of_work",
+   "fieldtype": "Link",
+   "label": "Stage of Work (Task)",
+   "options": "Task"
+  },
+  {
+   "fieldname": "status_section",
+   "fieldtype": "Section Break",
+   "label": "Status"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Draft\nReviewed\nClosed",
+   "default": "Draft"
+  },
+  {
+   "fieldname": "column_break_svr3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "next_visit_date",
+   "fieldtype": "Date",
+   "label": "Next Visit Date"
+  },
+  {
+   "fieldname": "checklist_section",
+   "fieldtype": "Section Break",
+   "label": "Site Checklist"
+  },
+  {
+   "fieldname": "checklist",
+   "fieldtype": "Table",
+   "label": "Checklist",
+   "options": "Site Visit Checklist Item"
+  },
+  {
+   "fieldname": "observations_section",
+   "fieldtype": "Section Break",
+   "label": "Observations & Defects"
+  },
+  {
+   "fieldname": "observations",
+   "fieldtype": "Small Text",
+   "label": "General Observations"
+  },
+  {
+   "fieldname": "photos",
+   "fieldtype": "Attach Multiple",
+   "label": "Site Photos"
+  },
+  {
+   "fieldname": "column_break_svr4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "defects_found",
+   "fieldtype": "Small Text",
+   "label": "Defects Found"
+  },
+  {
+   "fieldname": "corrective_action",
+   "fieldtype": "Small Text",
+   "label": "Corrective Action"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-06-30 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Estimation",
+ "name": "Site Visit Report",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

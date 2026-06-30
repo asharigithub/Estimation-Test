@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "creation": "2026-06-30 13:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section",
+  "sl_no",
+  "description",
+  "unit",
+  "qty",
+  "auto_calculated",
+  "column_break_boq1",
+  "material_rate",
+  "labour_rate",
+  "material_cost",
+  "labour_cost",
+  "total_cost",
+  "remarks",
+  "formula_basis"
+ ],
+ "fields": [
+  {
+   "fieldname": "section",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Section",
+   "options": "Civil Works\nFlooring\nBathroom Tiles\nDoors & Windows\nPainting\nElectrical\nPlumbing & Sanitary",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sl_no",
+   "fieldtype": "Int",
+   "label": "Sl.No"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Unit",
+   "options": "Cum\nKg\nSq.m\nSq.ft\nNos\nBags (20kg)\nLitre\nRmt\nLot\nLS"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Qty"
+  },
+  {
+   "fieldname": "column_break_boq1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "material_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Material Rate"
+  },
+  {
+   "fieldname": "labour_rate",
+   "fieldtype": "Currency",
+   "label": "Labour Rate"
+  },
+  {
+   "fieldname": "material_cost",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Material Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "labour_cost",
+   "fieldtype": "Currency",
+   "label": "Labour Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_cost",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "default": "0",
+   "fieldname": "auto_calculated",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Auto Qty"
+  },
+  {
+   "fieldname": "formula_basis",
+   "fieldtype": "Code",
+   "label": "Formula Basis",
+   "options": "Python",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-06-30 13:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Estimation",
+ "name": "BOQ Section Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -152,7 +152,9 @@ fixtures = [
 # }
 # include js in doctype views
 doctype_js = {
-    "Lead":"public/js/lead.js",
+    "Lead": "public/js/lead.js",
+    "Project": "public/js/project.js",
+    "Site Analysis": "public/js/site_analysis.js",
 }
 # Document Events
 # ---------------
