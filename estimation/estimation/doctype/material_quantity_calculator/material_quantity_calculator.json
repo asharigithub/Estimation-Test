@@ -15,18 +15,21 @@
   {
    "fieldname": "structure_calculation",
    "fieldtype": "Table",
+   "hidden": 1,
    "label": "Structure Calculation",
    "options": "Structure Calculation"
   },
   {
    "fieldname": "finishing_calculation",
    "fieldtype": "Table",
+   "hidden": 1,
    "label": "Finishing Calculation",
    "options": "Finishing Calculation"
   },
   {
    "fieldname": "waterproofing_calculation",
    "fieldtype": "Table",
+   "hidden": 1,
    "label": "Waterproofing Calculation",
    "options": "Waterproofing Calculation"
   },
@@ -47,7 +50,7 @@
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2026-06-14 13:12:06.192098",
+ "modified": "2026-07-02 22:51:50.860149",
  "modified_by": "Administrator",
  "module": "Estimation",
  "name": "Material Quantity Calculator",
